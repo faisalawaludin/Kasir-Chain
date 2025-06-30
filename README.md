@@ -4,6 +4,17 @@
 
 **Kasir Chain POS** adalah sistem Point of Sale (POS) modern berbasis **blockchain**, dibangun di atas platform **Internet Computer Protocol (ICP)**. Sistem ini dirancang untuk mendukung UMKM dalam mengelola penjualan secara **real-time**, **transparan**, **aman**, dan **bebas perantara**, dengan mendukung **pembayaran Web3** maupun **pembayaran lokal** (local payment) sebagai metode transaksi digital yang fleksibel.
 
+
+## 🔗 Canister Deployment
+
+- **Backend Canister:**  
+  [https://a4gq6-oaaaa-aaaab-qaa4q-cai.raw.icp0.io/?id=7pant-ciaaa-aaaad-aawqq-cai](https://a4gq6-oaaaa-aaaab-qaa4q-cai.raw.icp0.io/?id=7pant-ciaaa-aaaad-aawqq-cai)
+
+- **Frontend Canister:**  
+  [https://7gdgp-uaaaa-aaaad-aawra-cai.icp0.io/](https://7gdgp-uaaaa-aaaad-aawra-cai.icp0.io/)
+
+
+
 ---
 
 ## 🎯 Tujuan Utama
@@ -94,16 +105,6 @@
 > 🤖 Fitur **AI LLM** masih dalam tahap **uji coba dan evaluasi**. Untuk pengujian AI, terdapat fungsi `listProductsAI` di dalam backend.  
 > 💳 Fitur **pembayaran** (Web3 dan fiat) juga masih dalam **tahap pengembangan**.  
 > 🎥 **Video demonstrasi** saat ini belum tersedia karena project belum selesai sepenuhnya.
-
-
-## 🔗 Canister Deployment
-
-- **Backend Canister:**  
-  [https://a4gq6-oaaaa-aaaab-qaa4q-cai.raw.icp0.io/?id=7pant-ciaaa-aaaad-aawqq-cai](https://a4gq6-oaaaa-aaaab-qaa4q-cai.raw.icp0.io/?id=7pant-ciaaa-aaaad-aawqq-cai)
-
-- **Frontend Canister:**  
-  [https://7gdgp-uaaaa-aaaad-aawra-cai.icp0.io/](https://7gdgp-uaaaa-aaaad-aawra-cai.icp0.io/)
-
 
 Admin
 

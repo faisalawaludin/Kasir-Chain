@@ -108,21 +108,31 @@
 
 Admin
 
+https://7gdgp-uaaaa-aaaad-aawra-cai.icp0.io/admin
+
 ![image](https://github.com/user-attachments/assets/7ff072b4-bb3f-4f9f-aa59-bb9a75d044e5)
 
 Product
+
+https://7gdgp-uaaaa-aaaad-aawra-cai.icp0.io/admin/products
 
 ![image](https://github.com/user-attachments/assets/ad4454b7-75f6-4ff5-8c4b-27006ed638a7)
 
 Order Management 
 
+https://7gdgp-uaaaa-aaaad-aawra-cai.icp0.io/admin/orders
+
 ![image](https://github.com/user-attachments/assets/476c66a9-14b6-42dc-935f-08f93f53b3d9)
 
 Voucher
 
+https://7gdgp-uaaaa-aaaad-aawra-cai.icp0.io/vouchers
+
 ![image](https://github.com/user-attachments/assets/cf285e77-332e-4626-9f22-31618e8779cb)
 
 Antrian
+
+https://7gdgp-uaaaa-aaaad-aawra-cai.icp0.io/queue
 
 ![image](https://github.com/user-attachments/assets/54e5ee16-7a7d-4cc4-aa80-587c5cc57f74)
 

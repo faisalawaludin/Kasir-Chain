@@ -1,0 +1,116 @@
+type VoucherData = 
+ record {
+   code: text;
+   description: text;
+   discount: nat;
+   expiryDate: text;
+   id: text;
+   isActive: bool;
+ };
+type Time = int;
+type SubCategory = 
+ record {
+   additionalPrice: nat;
+   id: text;
+   name: text;
+ };
+type Result_4 = 
+ variant {
+   err: text;
+   ok: CategoryData;
+ };
+type Result_3 = 
+ variant {
+   err: text;
+   ok: OrderData;
+ };
+type Result_2 = 
+ variant {
+   err: text;
+   ok: ProductData;
+ };
+type Result_1 = 
+ variant {
+   err: text;
+   ok: VoucherData;
+ };
+type Result = 
+ variant {
+   err: text;
+   ok;
+ };
+type ProductSubCategory = 
+ record {
+   additionalPrice: nat;
+   id: text;
+   name: text;
+ };
+type ProductData = 
+ record {
+   categoryId: text;
+   description: text;
+   id: text;
+   image: text;
+   name: text;
+   price: nat;
+   status: text;
+   subCategories: vec SubCategory;
+ };
+type OrderStatus = 
+ variant {
+   cancelled;
+   completed;
+   pending;
+   processing;
+ };
+type OrderData = 
+ record {
+   completedAt: opt Time;
+   createdAt: Time;
+   cryptoToken: opt text;
+   discount: nat;
+   id: text;
+   items: vec CartItem;
+   paymentMethod: opt text;
+   status: OrderStatus;
+   subtotal: nat;
+   tax: nat;
+   total: nat;
+ };
+type CategoryData = 
+ record {
+   icon: text;
+   id: text;
+   name: text;
+ };
+type CartItem = 
+ record {
+   customerNote: opt text;
+   orderId: opt text;
+   product: ProductData;
+   quantity: nat;
+   selectedSubCategory: opt ProductSubCategory;
+ };
+service : {
+  addCategory: (c: CategoryData) -> (Result);
+  addOrder: (o: OrderData) -> (Result);
+  addProduct: (p: ProductData) -> (Result);
+  addVoucher: (v: VoucherData) -> (Result);
+  deleteCategory: (id: text) -> (Result);
+  deleteOrder: (id: text) -> (Result);
+  deleteProduct: (id: text) -> (Result);
+  deleteVoucher: (id: text) -> (Result);
+  getCategory: (id: text) -> (Result_4) query;
+  getOrder: (id: text) -> (Result_3) query;
+  getProduct: (id: text) -> (Result_2) query;
+  getVoucher: (id: text) -> (Result_1) query;
+  listCategories: () -> (vec CategoryData) query;
+  listOrders: () -> (vec OrderData) query;
+  listProducts: () -> (vec ProductData) query;
+  listProductsAI: () -> (text);
+  listVouchers: () -> (vec VoucherData) query;
+  updateCategory: (c: CategoryData) -> (Result);
+  updateOrder: (o: OrderData) -> (Result);
+  updateProduct: (p: ProductData) -> (Result);
+  updateVoucher: (v: VoucherData) -> (Result);
+}
